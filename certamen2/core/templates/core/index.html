@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Inicio - Smart Events{% endblock %}
+
+{% block content %}
+<section>
+  <div class="hero">
+    <h1>CONCIERTO UNIVERSITARIO 2025</h1>
+    <h3>
+      Disfruta de la mejor música en vivo con bandas emergentes y DJ invitados.
+      <br>
+      <p>Una jornada llena de energía, baile y buena vibra que reunirá a estudiantes de todas las universidades de la región.</p>
+      <br><br>
+      <p><img src="{% static 'core/img/ubicacion.png' %}" alt="ubicacion">Sporting Viña del Mar</p>
+    </h3>
+
+    <div id="cuenta">
+      <div class="contador"><p id="dias">00</p></div>
+      <p class="puntos">:</p>
+      <div class="contador"><p id="horas">00</p></div>
+      <p class="puntos">:</p>
+      <div class="contador"><p id="minutos">00</p></div>
+      <p class="puntos">:</p>
+      <div class="contador"><p id="segundos">00</p></div>
+    </div>
+    <a href="{% url 'eventos' %}" class="btn btn-primary" id="boton-cta">Ver todos los detalles</a>
+
+  </div>
+</section>
+{% endblock %}
+
